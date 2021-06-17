@@ -1,0 +1,103 @@
+
+
+body {
+  font-family: "Baloo Tammudu 2", cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #ece4db;
+}
+
+h1 {
+  font-size: 3em;
+  border-bottom: 3px solid pink;
+  width: 500px;
+  border-right: 3px solid pink;
+  box-shadow: 4px 5px 5px 0px #888888;
+  padding: 10px;
+  text-align: center;
+  background-color: #ffd7ba;
+}
+
+h3{
+  background-color: #f77f00;
+  color: white;
+  padding: 5px;
+  box-shadow: 4px 5px 5px 0px #888888;
+  border-radius: 5px;
+  text-align: center;
+  width: 50%;
+}
+
+.container {
+  margin: 10px; 
+}
+
+.zoom{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.translate{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+/* add transition to images */
+img {
+  width: 400px;
+  height: 250px;
+
+  margin: 30px;
+
+  /* border-radius: 2px; */
+  box-shadow: 4px 5px 5px 0px #888888;
+  transition: all 0.8s;
+}
+/* zoom it to scale of 1.1 when hovered */
+img:hover {
+  transform: scale(1.1);
+}
+
+
+.translate{ 
+  margin: 10px;
+}
+
+.translate  div{
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 20px;
+}
+
+.translate  div:hover{
+  transform: translateX(300px);
+}
+
+.cirle0{
+background-color: royalblue;
+transition: all 1.5s linear;
+}
+.cirle1{
+background-color: lightgreen;
+transition: all 1.5s ease;
+}
+.cirle2{
+background-color: lightpink;
+transition: all 1.5s ease-in;
+}
+.cirle3{
+background-color: lightslategray;
+transition: all 1.5s ease-in-out;
+}
+.cirle4{
+background-color: lightsalmon;
+transition: all 1.5s ease-out;
+}
+.cirle5{
+background-color: purple;
+transition: all 1.5s cubic-bezier(0,1,.98,0);
+}
