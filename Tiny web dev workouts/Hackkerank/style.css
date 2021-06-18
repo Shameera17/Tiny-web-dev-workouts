@@ -1,3 +1,4 @@
+/* all , html , body */
 * {
   margin: 0;
 }
@@ -8,12 +9,19 @@ body {
   height: 100%;
   width: 100%;
   background-color: #f3f7f7;
-  /* overflow: scroll; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  display: flex;
+  flex-direction: column;
 }
 
+/* header */
+
 header {
-  height: 7%;
-  width: 100%;
+  height: 10%;
+  width: auto;
+  padding: 10px;
   background-color: #1ba94c;
   color: #ffff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -21,7 +29,6 @@ header {
   font-size: 13px;
   display: flex;
   justify-content: space-evenly;
-  align-self: center;
   align-items: center;
 }
 
@@ -39,81 +46,156 @@ button {
   cursor: pointer;
 }
 
+/* navigation bar */
 nav {
   height: 8%;
-  width: 100%;
-
+  width: auto;
+  padding: 10px;
   background-color: #39424e;
-  /* color: white; */
-}
-nav p {
-  margin: 0;
-}
-
-ul{
   display: flex;
+  justify-content: space-around;
+}
+nav img {
+  border-style: none;
+  height: 20px;
+  width: 184px;
 }
 
+.navsec {
+  display: flex;
+  justify-content: space-between;
+}
 
-li{
+nav img,
+nav a {
   text-transform: uppercase;
   color: #b7c9cc;
   list-style: none;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: #39424e solid 5px;
+  padding: 10px;
 }
 
+nav a:focus {
+  color: #f3f7f7;
+  border-bottom: #1ba94c solid 5px;
+}
+
+/* heading of home page */
+#dashboard {
+  height: 100px;
+  background-color: #ffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 10%;
+  box-shadow: 0.1px 1px 4px 0 #e7eeef;
+}
+
+.dash {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* body */
 content {
   height: 80%;
-  margin: 5%;
+  margin: 1% 10%;
   background-color: #f3f7f7;
   display: flex;
   flex-direction: column;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-h3{
+h3 {
   text-transform: capitalize;
   margin: 50px 0 20px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
 }
-.skills{
+
+p {
+  text-transform: capitalize;
+}
+
+.skills {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
-.skill{
+.skill {
   width: 360px;
   height: 183px;
   background-color: #ffff;
+  box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.1);
 }
 
-.tutorial{
+.skill:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial {
   width: 570px;
   height: 260px;
   background-color: #ffff;
   margin-bottom: 50px;
+  box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.1);
 }
 
-.practise{
+.tutorial:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.practise {
   display: flex;
   flex-flow: row wrap;
+  box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.1);
 }
 
-.prac{
-  width: 400px;
+.prac {
+  width: 403px;
   height: 61px;
+  display: flex;
   background-color: #ffff;
+  border-bottom: 1px solid #f3f7f7;
+  border-right: 1px solid #f3f7f7;
+  align-items: center;
+  color: #39424e;
 }
 
-.tute{
+.prac:hover {
+  box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+/* Tutorials */
+.tutes {
+  height: 560px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.tute {
   height: 220px;
   width: 360px;
   background-color: #ffff;
-  margin: 10px 0 10px 0;
+  box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-  /* height: 10px; */
+.tute:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul li {
+  list-style: none;
+  text-decoration: none;
 }
