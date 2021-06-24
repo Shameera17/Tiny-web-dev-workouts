@@ -18,4 +18,13 @@ div {
 
 property and duration are "Required"
 
+Transformation
+
+-> rotate, move, skew, and scale elements
+-> triggered when element change its state
+    i.e hover an element / click an element
+
+Resources 
+1. https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+2. https://thoughtbot.com/blog/transitions-and-transforms
 

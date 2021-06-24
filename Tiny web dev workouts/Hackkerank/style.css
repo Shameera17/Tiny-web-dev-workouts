@@ -128,12 +128,28 @@ p {
 .skill {
   width: 360px;
   height: 183px;
+  position: relative;
   background-color: #ffff;
   box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.1);
 }
 
 .skill:hover {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.skill a {
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+}
+.skill a div {
+  display: flex;
+  flex-direction: column;
+}
+
+#img-ang {
+  opacity: 0.1;
+  width: 156px;
 }
 
 .tutorial {
