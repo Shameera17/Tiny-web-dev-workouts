@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 375px) {
+  body {
+    flex-flow: row wrap;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    flex-flow: column wrap;
+  }
+}
+
+.container {
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+h1 {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+p {
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.car {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.car img {
+  height: 40px;
+  width: 64px;
+}
+
+.car.one {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.car.two {
+  background-color: hsl(184, 100%, 22%);
+}
+.car.three {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.button {
+  border-radius: 15px;
+  padding: 8px;
+  width: 100px;
+  text-align: center;
+  font-weight: 200;
+  border: 2px solid transparent;
+  background-color: white;
+}
+
+.button.one {
+  color: hsl(31, 77%, 52%);
+}
+.button.two {
+  color: hsl(184, 100%, 22%);
+}
+.button.three {
+  color: hsl(179, 100%, 13%);
+}
+
+.button:hover {
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.attribution {
+  padding: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
